@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpendPulse — Privacy Policy</title>
+<style>
+  :root { --fg:#1A1A2E; --muted:#6E6E80; --accent:#6C5CE7; --bg:#FFFFFF; --card:#F5F5F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#F5F5F7; --muted:#9E9EB0; --bg:#0A0A0F; --card:#1C1C23; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 -apple-system, "SF Pro Text", "Pretendard", system-ui, sans-serif;
+         color: var(--fg); background: var(--bg); padding: 32px 20px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p, ul { color: var(--fg); margin: 8px 0; }
+  ul { padding-left: 1.2em; }
+  .badge { display: inline-block; padding: 4px 10px; border-radius: 999px;
+           background: var(--card); color: var(--accent); font-weight: 600; font-size: 13px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--card);
+           color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective May 20, 2026 · <span class="badge">100% on-device</span></p>
+
+  <p><strong>SpendPulse never sends your financial data anywhere.</strong> No bank connection, no cloud sync, no analytics server.</p>
+
+  <h2>What we collect</h2>
+  <p>SpendPulse stores the following on your iPhone only, via Apple's SwiftData (the same storage layer Apple's own Health and Journal apps use):</p>
+  <ul>
+    <li>Transactions you record (amount, currency, category, optional mood, optional memo, optional merchant, date)</li>
+    <li>Savings goals you create (title, target, current, optional deadline)</li>
+    <li>App preferences (selected currency, onboarding state, biometric lock toggle, recent-categories order)</li>
+  </ul>
+  <p>None of this leaves your device.</p>
+
+  <h2>What we don't collect</h2>
+  <ul>
+    <li>No name, email, phone number, or account — SpendPulse has no login.</li>
+    <li>No bank credentials, no plaintext credit card numbers.</li>
+    <li>No advertising identifiers (IDFA), no third-party analytics.</li>
+    <li>No telemetry or crash reports unless you explicitly send one through TestFlight.</li>
+  </ul>
+
+  <h2>Apple Intelligence (iOS 26+)</h2>
+  <p>When the device supports Apple Intelligence (iOS 26 and later), SpendPulse uses Apple's on-device Foundation Models to generate the Weekly Pulse and category classification suggestions. Those models run locally — Apple's <a href="https://www.apple.com/privacy/docs/Apple_Intelligence_PCC.pdf">documentation</a> describes the privacy architecture. SpendPulse does not opt into Private Cloud Compute for any feature; everything is on-device.</p>
+
+  <h2>Subscriptions and payments</h2>
+  <p>Subscription purchases are handled by Apple's StoreKit. Apple receives only what it needs to process the payment; SpendPulse receives a receipt to verify your active entitlement. We do not see your billing info.</p>
+
+  <h2>Your rights</h2>
+  <ul>
+    <li><strong>Access:</strong> All your data is already on your device. The Settings → Export feature produces a CSV copy.</li>
+    <li><strong>Delete:</strong> Uninstalling SpendPulse permanently removes all stored data. Individual transactions and goals can be deleted in-app.</li>
+    <li><strong>No portability concerns:</strong> Your data was never on our servers; we have nothing to hand over.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>SpendPulse is rated 4+ and is suitable for any age, but is designed for adults managing their own spending. We do not knowingly collect data from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we ever start collecting data — for example, an opt-in cloud sync — we will update this policy and prompt you in-app before any change takes effect. The current policy is dated at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:jimmy@junsoft.org">jimmy@junsoft.org</a></p>
+
+  <footer>
+    © 2026 JunSoft Mobile Inc. · <a href="./support.html">Support</a> · <a href="./">SpendPulse</a>
+  </footer>
+</main>
+</body>
+</html>

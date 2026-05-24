@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpendPulse — Support</title>
+<style>
+  :root { --fg:#1A1A2E; --muted:#6E6E80; --accent:#6C5CE7; --bg:#FFFFFF; --card:#F5F5F7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#F5F5F7; --muted:#9E9EB0; --bg:#0A0A0F; --card:#1C1C23; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 -apple-system, "SF Pro Text", "Pretendard", system-ui, sans-serif;
+         color: var(--fg); background: var(--bg); padding: 32px 20px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, ul { color: var(--fg); margin: 8px 0; }
+  ul { padding-left: 1.2em; }
+  details { margin: 12px 0; padding: 16px; background: var(--card); border-radius: 12px; }
+  details summary { cursor: pointer; font-weight: 600; }
+  details[open] summary { color: var(--accent); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .contact { padding: 20px; background: var(--card); border-radius: 16px; margin-top: 24px; }
+  footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--card);
+           color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Support</h1>
+  <p class="meta">We respond within 1 business day.</p>
+
+  <div class="contact">
+    <h3>Email</h3>
+    <p><a href="mailto:jimmy@junsoft.org">jimmy@junsoft.org</a></p>
+    <p>Please include your iPhone model, iOS version, and a description of what you saw vs. expected.</p>
+  </div>
+
+  <h2>Frequently asked</h2>
+
+  <details>
+    <summary>Why doesn't SpendPulse connect to my bank?</summary>
+    <p>By design. Connecting to a bank means a third-party aggregator (Plaid, Tink, etc.) sees every transaction you make. SpendPulse keeps your data on your iPhone, period. You record what matters — the AI insights still surface real patterns from your manual entries.</p>
+  </details>
+
+  <details>
+    <summary>How does the AI work without a server?</summary>
+    <p>On iOS 26 and later, SpendPulse uses Apple Intelligence — Apple's on-device Foundation Models. Nothing leaves your phone. On iOS 18, we use a deterministic statistical engine that produces the same kinds of insights from your transaction history.</p>
+  </details>
+
+  <details>
+    <summary>Where is my data stored?</summary>
+    <p>Locally on your iPhone in SwiftData (Apple's storage framework). The Settings → Export feature gives you a CSV copy anytime. Uninstalling removes it permanently — we have nothing to back up because nothing was ever uploaded.</p>
+  </details>
+
+  <details>
+    <summary>Can I sync between iPhone and iPad?</summary>
+    <p>Not yet. We're evaluating CloudKit (Apple's end-to-end encrypted sync) for a future release. This will be opt-in.</p>
+  </details>
+
+  <details>
+    <summary>How do I cancel my Pro subscription?</summary>
+    <p>iOS: Settings app → tap your name → Subscriptions → SpendPulse → Cancel. You'll keep Pro features until the end of the current period. SpendPulse cannot cancel subscriptions on your behalf — only Apple can.</p>
+  </details>
+
+  <details>
+    <summary>I forgot to record a transaction. Can I add it later with the right date?</summary>
+    <p>Yes. In the Add tab, after entering an amount, tap the date row (coming in v1.1) or save with today and edit later. For now, the workaround is to swap the device date for a moment — we know that's clunky and v1.1 fixes it.</p>
+  </details>
+
+  <details>
+    <summary>How is "mood" tracked?</summary>
+    <p>Five emojis: 😊 happy, 😐 neutral, 😤 stressed, 😴 tired, 🎉 celebratory. Tagging is optional. After ~30 transactions with moods, the Weekly Pulse can correlate mood and spend amount.</p>
+  </details>
+
+  <details>
+    <summary>What does the Subscription Audit see?</summary>
+    <p>Only the transactions you've recorded. If you log "Netflix $9.99" three months in a row, we'll detect the pattern. If you don't log it, we don't know it exists. (We can't see your real bank statements.)</p>
+  </details>
+
+  <details>
+    <summary>I see a bug. What do I send?</summary>
+    <p>Email <a href="mailto:jimmy@junsoft.org">jimmy@junsoft.org</a> with: iPhone model, iOS version, SpendPulse version (Settings → About → Version), steps to reproduce, and a screenshot if helpful. We'll respond within a business day.</p>
+  </details>
+
+  <footer>
+    © 2026 JunSoft Mobile Inc. · <a href="./privacy.html">Privacy</a> · <a href="./">SpendPulse</a>
+  </footer>
+</main>
+</body>
+</html>
